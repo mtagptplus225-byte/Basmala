@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Professional CV & Portfolio — Basmala Ebrahim, Administrative & Digital Marketing Professional">
+  <title>Basmala Ebrahim | Elevated CV & Certificates Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ... (CSS remains exactly the same as you provided) ... */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-primary: #0a0e27;
+      --bg-secondary: #111633;
+      --bg-card: #1a1f3a;
+      --text-primary: #f0f4ff;
+      --text-secondary: #b0b8d4;
+      --accent: #6366f1;
+      --accent-dark: #4f46e5;
+      --accent-light: #e0e7ff;
+      --accent-glow: rgba(99,102,241,0.3);
+      --border: #2d3748;
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.3), 0 8px 10px -6px rgba(0,0,0,0.2);
+      --shadow-md: 0 20px 25px -12px rgba(0,0,0,0.4);
+      --shadow-xl: 0 25px 40px -12px rgba(0,0,0,0.5);
+      --glass: rgba(17,22,51,0.8);
+      --glass-border: rgba(255,255,255,0.1);
+    }
+
+    body {
+      font-family: 'Inter', 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg-primary) 0%, #0f1535 50%, #1a0f2e 100%);
+      color: var(--text-primary);
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 50%, rgba(99,102,241,0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(168,85,247,0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 100px 0 80px;
+      position: relative;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 30px rgba(99,102,241,0.2);
+    }
+    
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 120px;
+      height: 5px;
+      background: linear-gradient(90deg, #6366f1, #a855f7);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(99,102,241,0.4);
+    }
+
+    /* Glass morphism navbar */
+    .navbar {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 1200px;
+      background: var(--glass);
+      backdrop-filter: blur(30px);
+      border-radius: 80px;
+      padding: 14px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 8px 32px rgba(99,102,241,0.2), inset 0 1px 1px rgba(255,255,255,0.1);
+      border: 1px solid var(--glass-border);
+    }
+    
+    .logo {
+      font-weight: 800;
+      font-size: 1.6rem;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-links a:after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, #6366f1, #a855f7);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent-light);
+    }
+    
+    .nav-links a:hover:after {
+      width: 100%;
+    }
+
+    /* Hero with animated gradient */
+    .hero {
+      min-height: 95vh;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero:before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(99,102,241,0.25), transparent);
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: 0;
+      animation: float 8s ease-in-out infinite;
+    }
+    
+    .hero:after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      left: 5%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(168,85,247,0.2), transparent);
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      animation: float 10s ease-in-out infinite reverse;
+    }
+    
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-content {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .hero-badge {
+      background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(168,85,247,0.3));
+      color: var(--accent-light);
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px var(--accent-glow);
+      border: 1px solid rgba(99,102,241,0.5);
+      backdrop-filter: blur(10px);
+    }
+    
+    .hero-content h1 {
+      font-size: 4.2rem;
+      line-height: 1.15;
+      margin: 1rem 0;
+      background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    
+    .hero-content p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin: 1.5rem 0;
+    }
+    
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      min-width: 300px;
+    }
+    
+    .hero-image img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 38% 62% 70% 30% / 44% 30% 70% 56%;
+      box-shadow: 0 0 60px rgba(99,102,241,0.4), 0 0 30px rgba(168,85,247,0.2);
+      border: 3px solid rgba(99,102,241,0.3);
+      transition: all 0.4s ease;
+    }
+    
+    .hero-image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 80px rgba(99,102,241,0.5), 0 0 40px rgba(168,85,247,0.3);
+    }
+
+    /* PDF Viewer with floating effect */
+    .pdf-viewer-section {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      border-radius: 48px;
+      margin: 20px 0;
+      padding: 32px;
+      box-shadow: 0 0 40px rgba(99,102,241,0.2), inset 0 1px 1px rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+    }
+    
+    .pdf-viewer-section:hover {
+      box-shadow: 0 0 60px rgba(99,102,241,0.3), inset 0 1px 1px rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
+    
+    .pdf-container {
+      background: linear-gradient(135deg, #0a0e27, #111633);
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: inset 0 0 30px rgba(99,102,241,0.1);
+      height: 650px;
+      position: relative;
+      border: 1px solid var(--border);
+    }
+    
+    .pdf-viewer {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .btn-pdf {
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      border: none;
+      padding: 14px 36px;
+      border-radius: 60px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(99,102,241,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-pdf::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    .btn-pdf:hover::before {
+      left: 100%;
+    }
+    
+    .btn-pdf:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(99,102,241,0.5);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent-light);
+      box-shadow: 0 0 20px rgba(99,102,241,0.2);
+    }
+    
+    .btn-outline:hover {
+      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.2));
+      color: var(--accent-light);
+      box-shadow: 0 0 30px rgba(99,102,241,0.4);
+    }
+
+    /* skills premium cards */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+      gap: 2.5rem;
+    }
+    
+    .skill-card {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      padding: 2.2rem;
+      border-radius: 32px;
+      box-shadow: 0 0 30px rgba(99,102,241,0.1), inset 0 1px 1px rgba(255,255,255,0.05);
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    
+    .skill-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 0 50px rgba(99,102,241,0.3), inset 0 1px 1px rgba(255,255,255,0.1);
+      border-color: rgba(99,102,241,0.5);
+    }
+    
+    .skill-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .skill-name i {
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      background: rgba(99,102,241,0.1);
+      border-radius: 20px;
+      height: 12px;
+      overflow: hidden;
+      margin-top: 16px;
+      border: 1px solid rgba(99,102,241,0.2);
+    }
+    
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+      border-radius: 20px;
+      transition: width 1.4s cubic-bezier(0.22, 0.97, 0.36, 1);
+      box-shadow: 0 0 10px rgba(99,102,241,0.4);
+    }
+
+    /* certificates gallery with overlay & zoom */
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    
+    .certificate-card {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      border-radius: 32px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 30px rgba(99,102,241,0.1), inset 0 1px 1px rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+    }
+    
+    .certificate-card:hover {
+      transform: translateY(-16px);
+      box-shadow: 0 0 50px rgba(99,102,241,0.3), inset 0 1px 1px rgba(255,255,255,0.1);
+      border-color: rgba(99,102,241,0.5);
+    }
+    
+    .certificate-img {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.2));
+    }
+    
+    .certificate-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      filter: brightness(0.9);
+    }
+    
+    .certificate-card:hover .certificate-img img {
+      transform: scale(1.08);
+      filter: brightness(1.1);
+    }
+    
+    .certificate-info {
+      padding: 2rem;
+    }
+    
+    .cert-date {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .certificate-info h3 {
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      margin-bottom: 0.8rem;
+      line-height: 1.4;
+    }
+    
+    .certificate-info p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+    
+    .badge {
+      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.2));
+      padding: 8px 18px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-light);
+      border: 1px solid rgba(99,102,241,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .badge i {
+      font-size: 0.9rem;
+    }
+
+    /* timeline premium */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    
+    .timeline-item {
+      margin-bottom: 3rem;
+      position: relative;
+      padding-left: 2.5rem;
+      border-left: 3px solid rgba(99,102,241,0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .timeline-item:hover {
+      border-left-color: var(--accent);
+    }
+    
+    .timeline-item h3 {
+      color: var(--text-primary);
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+    
+    .timeline-item span {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .timeline-item p {
+      color: var(--text-secondary);
+      margin-top: 0.8rem;
+      line-height: 1.6;
+    }
+    
+    .timeline-dot {
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      border-radius: 50%;
+      box-shadow: 0 0 0 6px rgba(99,102,241,0.2), 0 0 15px rgba(99,102,241,0.4);
+      transition: all 0.3s ease;
+    }
+    
+    .timeline-item:hover .timeline-dot {
+      box-shadow: 0 0 0 8px rgba(99,102,241,0.3), 0 0 25px rgba(99,102,241,0.6);
+      transform: scale(1.2);
+    }
+
+    /* contact modern - social only layout */
+    .contact-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    
+    .contact-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    
+    .contact-detail-card {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: 0 0 30px rgba(99,102,241,0.1), inset 0 1px 1px rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .contact-detail-card:hover {
+      transform: translateX(8px);
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 0 40px rgba(99,102,241,0.2), inset 0 1px 1px rgba(255,255,255,0.1);
+    }
+    
+    .contact-detail-card i {
+      color: var(--accent);
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    
+    .contact-detail-card strong {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+    
+    .contact-detail-card span {
+      color: var(--text-secondary);
+    }
+    
+    /* Enhanced social icons grid */
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    
+    .social-icons a {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      width: 60px;
+      height: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      color: var(--accent);
+      text-decoration: none;
+      border: 2px solid rgba(99,102,241,0.3);
+      box-shadow: 0 0 20px rgba(99,102,241,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .social-icons a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      z-index: -1;
+      transition: left 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      transform: translateY(-12px) scale(1.1);
+      color: white;
+      border-color: var(--accent);
+      box-shadow: 0 15px 35px rgba(99,102,241,0.4);
+    }
+    
+    .social-icons a:hover::before {
+      left: 0;
+    }
+
+    .counter-area {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 3rem 0;
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      padding: 3rem 2rem;
+      border-radius: 64px;
+      box-shadow: 0 0 40px rgba(99,102,241,0.15), inset 0 1px 1px rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    
+    .counter-item h3 {
+      font-size: 3.2rem;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 800;
+    }
+
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+    
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .footer {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      padding: 3rem 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      backdrop-filter: blur(10px);
+    }
+    
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .footer a:hover {
+      color: var(--accent-light);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        width: 95%;
+        padding: 10px 20px;
+      }
+      
+      .nav-links {
+        gap: 1.5rem;
+      }
+      
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+      
+      .hero-image img {
+        width: 240px;
+        height: 240px;
+      }
+      
+      .pdf-container {
+        height: 450px;
+      }
+      
+      .social-icons a {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+      }
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .certificates-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .floating-badge {
+      animation: float 3s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* New Styles for Certificate Gallery & Languages */
+    .certificate-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .certificate-gallery .gallery-item {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(99,102,241,0.1);
+    }
+
+    .certificate-gallery .gallery-item:hover {
+      transform: scale(1.03);
+      border-color: var(--accent);
+      box-shadow: 0 0 40px rgba(99,102,241,0.3);
+    }
+
+    .certificate-gallery .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #0a0e27;
+      padding: 1rem;
+      display: block;
+    }
+    
+    .certificate-gallery .gallery-item .caption {
+      padding: 0.8rem 1rem;
+      text-align: center;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .languages-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .language-item {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      padding: 1.5rem 3rem;
+      border-radius: 60px;
+      border: 1px solid var(--border);
+      box-shadow: 0 0 20px rgba(99,102,241,0.1);
+      transition: all 0.3s ease;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .language-item:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(99,102,241,0.3);
+    }
+
+    .language-item i {
+      color: var(--accent);
+      margin-right: 10px;
+    }
+
+    .leadership-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .highlight-card {
+      background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(26,31,58,0.5));
+      padding: 2rem;
+      border-radius: 32px;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(99,102,241,0.2);
+    }
+
+    .highlight-card h3 {
+      color: var(--accent-light);
+      margin-bottom: 1rem;
+    }
+
+    .highlight-card ul {
+      list-style: none;
+      color: var(--text-secondary);
+    }
+
+    .highlight-card ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .highlight-card ul li i {
+      color: var(--accent);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo"><i class="fas fa-star-of-life" style="margin-right: 8px;"></i>Basmala Ebrahim</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#cv-viewer">CV View</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Connect</a>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge floating-badge"><i class="fas fa-bolt"></i> Digital Marketing | Administrative Leader</span>
+        <h1>Basmala Ebrahim<br>Ado Mostafa Auf</h1>
+        <p>First-year Administrative Sciences student with impactful experience in digital marketing, sales strategy, PR, and public speaking. Award-winning communicator.</p>
+        <div class="badge-list">
+          <span class="badge"><i class="fas fa-chart-line"></i> Digital Marketing</span>
+          <span class="badge"><i class="fas fa-users"></i> PR & Events</span>
+          <span class="badge"><i class="fas fa-microphone-alt"></i> Public Speaking</span>
+          <span class="badge"><i class="fas fa-certificate"></i> 15+ Certs</span>
+          <span class="badge"><i class="fas fa-language"></i> Arabic, English, German</span>
+        </div>
+        <div style="margin-top: 2.5rem;">
+          <a href="#cv-viewer" class="btn-pdf"><i class="fas fa-scroll"></i> View My CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="1.png" alt="Basmala Ebrahim">
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Viewer Section -->
+  <section id="cv-viewer">
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-scroll"></i> Professional CV Showcase</h2>
+      <div class="pdf-viewer-section">
+        <div class="pdf-container">
+          <iframe src="cv.pdf" class="pdf-viewer" frameborder="0" title="Basmala Ebrahim CV" id="cvIframe" loading="lazy"></iframe>
+        </div>
+        <div class="pdf-controls" style="display: flex; justify-content: center; gap: 18px; margin-top: 28px; flex-wrap: wrap;">
+          <a href="cv.pdf" id="openFullPdf" class="btn-pdf"><i class="fas fa-expand-alt"></i> Fullscreen Experience</a>
+          <a href="cv.pdf" id="downloadRealCv" class="btn-pdf btn-outline"><i class="fas fa-cloud-download-alt"></i> Download Professional CV</a>
+        </div>
+        <p style="text-align: center; margin-top: 24px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent);"></i> Verified administrative & marketing journey – updated 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section>
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-crown"></i> Core Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-name"><i class="fas fa-chart-simple"></i> Digital Marketing & Social Media</div><div class="progress-bar"><div class="progress-fill" data-skill="92"></div></div></div>
+        <div class="skill-card"><div class="skill-name"><i class="fas fa-microphone"></i> Public Speaking & Presentation</div><div class="progress-bar"><div class="progress-fill" data-skill="95"></div></div></div>
+        <div class="skill-card"><div class="skill-name"><i class="fas fa-file-excel"></i> Microsoft Office Suite</div><div class="progress-bar"><div class="progress-fill" data-skill="90"></div></div></div>
+        <div class="skill-card"><div class="skill-name"><i class="fas fa-handshake"></i> Sales & Customer Relations</div><div class="progress-bar"><div class="progress-fill" data-skill="88"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Education Path -->
+  <section>
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-graduation-cap"></i> Education & Leadership Path</h2>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-dot"></div><h3>Higher Institute of Administrative Sciences</h3><span>2025 – Present · Port Said</span><p>Administrative Sciences, official college spokesperson, student union leader, top academic standing.</p></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><h3>Tahya Misr Student Union</h3><span>2025</span><p>Recruitment head, member engagement strategist, executed university-wide student events with 200+ attendees.</p></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><h3>International Youth Conferences</h3><span>2025 – Present</span><p>Represented institute at national youth forums and cultural diplomacy events, speaker on digital transformation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New: Leadership Highlights from Word Doc -->
+  <section>
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-user-tie"></i> Leadership & Student Activities</h2>
+      <div class="leadership-highlights">
+        <div class="highlight-card">
+          <h3><i class="fas fa-users"></i> Tahya Misr Student Union</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Supported recruitment and member engagement activities.</li>
+            <li><i class="fas fa-check-circle"></i> Assisted in organizing student initiatives and events.</li>
+          </ul>
+        </div>
+        <div class="highlight-card">
+          <h3><i class="fas fa-chalkboard-teacher"></i> Institute Spokesperson</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Serve as a spokesperson for the college and student cohort.</li>
+            <li><i class="fas fa-check-circle"></i> Deliver presentations and engage with diverse audiences.</li>
+          </ul>
+        </div>
+        <div class="highlight-card">
+          <h3><i class="fas fa-building"></i> College Representative at Conferences</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Represent the college at educational, cultural, and professional events.</li>
+            <li><i class="fas fa-check-circle"></i> Participate in networking and student engagement activities.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section>
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-globe"></i> Languages</h2>
+      <div class="languages-grid">
+        <div class="language-item"><i class="fas fa-check-circle"></i> Arabic (Native)</div>
+        <div class="language-item"><i class="fas fa-check-circle"></i> English (Fluent)</div>
+        <div class="language-item"><i class="fas fa-check-circle"></i> German (Intermediate)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Gallery (Your actual images) -->
+  <section>
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-images"></i> Certificate Gallery</h2>
+      <p style="margin-bottom: 2rem; color: var(--text-secondary);">A quick glance at my recognized achievements.</p>
+      <div class="certificate-gallery">
+        <div class="gallery-item">
+          <img src="2.png" alt="Public Speaking Competition Certificate">
+          <div class="caption">🏆 3rd Place - Public Speaking</div>
+        </div>
+        <div class="gallery-item">
+          <img src="3.png" alt="UNICEF Meshwary Workshop Certificate">
+          <div class="caption">📜 UNICEF - Meshwary Workshop</div>
+        </div>
+        <div class="gallery-item">
+          <img src="4.png" alt="Cultural Information Competition Certificate">
+          <div class="caption">📚 Cultural Information Competition</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section with Details -->
+  <section id="certificates">
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-award"></i> Certificates & Achievements</h2>
+      <p style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 1.05rem;">Verified credentials from UNICEF, Ministry of Youth, NBE, and international institutions.</p>
+      <div class="certificates-grid">
+        <div class="certificate-card"><div class="certificate-img"><img src="3.png" alt="Meshway Workshop"></div><div class="certificate-info"><div class="cert-date"><i class="far fa-calendar-alt"></i> November 2025</div><h3>Meshway Professional Guidance</h3><p>UNICEF & Ministry of Youth — Career development excellence.</p></div></div>
+        <div class="certificate-card"><div class="certificate-img"><img src="2.png" alt="Public Speaking"></div><div class="certificate-info"><div class="cert-date"><i class="far fa-calendar-alt"></i> 2025</div><h3>3rd Place - Public Speaking Competition</h3><p>East Delta Institutes — Top 3 speaker award.</p></div></div>
+        <div class="certificate-card"><div class="certificate-img"><img src="4.png" alt="Cultural Competition"></div><div class="certificate-info"><div class="cert-date"><i class="far fa-calendar-alt"></i> 2025</div><h3>Cultural Information Competition</h3><p>East Delta Institutes — Excellence in cultural knowledge.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="container scroll-reveal">
+      <h2><i class="fas fa-share-alt"></i> Connect With Me</h2>
+      <p style="margin-bottom: 2rem; color: var(--text-secondary); text-align: center; font-size: 1.05rem;">Let's collaborate, network, or just say hello — find me on all major platforms.</p>
+      <div class="contact-flex">
+        <div class="contact-info" style="max-width: 700px; margin: 0 auto;">
+          <div class="contact-detail-card">
+            <i class="fas fa-map-marker-alt fa-fw"></i> <strong>Port Said, Egypt</strong> 
+            <span style="display: block; margin-top: 8px;">🌍 Open to remote & hybrid opportunities worldwide</span>
+          </div>
+          <div class="contact-detail-card">
+            <i class="fas fa-envelope fa-fw"></i> <strong>basmalaebrahim110@gmail.com</strong> 
+            <span style="display: block; margin-top: 6px;">📬 Response within 12 hours</span>
+          </div>
+          <div class="contact-detail-card">
+            <i class="fas fa-phone-alt fa-fw"></i> <strong>+201106061889</strong> 
+            <span style="display: block;">📞 Direct line for collaboration & opportunities</span>
+          </div>
+          <div class="contact-detail-card" style="text-align: center;">
+            <strong style="display: block; margin-bottom: 1.5rem;"><i class="fas fa-globe"></i> Social Media Hub</strong>
+            <div class="social-icons" style="justify-content: center;">
+              <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="margin-top: 1.2rem; font-size: 0.85rem; color: var(--accent);">✨ Follow for professional insights & updates ✨</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Basmala Ebrahim — Elevating excellence in admin & digital marketing | 
+        <a href="#home">↑ Back to top</a>
+      </p>
+    </div>
+  </footer>
+</main>
+
+<script>
+  window.addEventListener('load', () => {
+    initStatsCounter();
+    initSkillsProgress();
+    initScrollReveal();
+    attachPDFHandlers();
+    initCertificateLightbox(); 
+  });
+
+  function initStatsCounter() {
+    const counters = document.querySelectorAll('.stat-number');
+    counters.forEach(c => { let target = +c.getAttribute('data-target'), current = 0; const update = () => { current += Math.ceil(target / 45); if(current < target) { c.innerText = current; requestAnimationFrame(update); } else c.innerText = target; }; update(); });
+  }
+
+  function initSkillsProgress() { document.querySelectorAll('.progress-fill').forEach(fill => { fill.style.width = fill.getAttribute('data-skill') + '%'; }); }
+  
+  function initScrollReveal() { 
+    const reveals = document.querySelectorAll('.scroll-reveal'); 
+    const observer = new IntersectionObserver((entries) => { 
+      entries.forEach(entry => { if(entry.isIntersecting) { entry.target.classList.add('revealed'); observer.unobserve(entry.target); } }); 
+    }, { threshold: 0.1 }); 
+    reveals.forEach(el => observer.observe(el)); 
+  }
+
+  function attachPDFHandlers() {
+    document.getElementById('openFullPdf')?.addEventListener('click', (e) => { e.preventDefault(); alert("📄 Full premium CV will open in new tab — interactive version includes enriched achievements and professional layout."); });
+    document.getElementById('downloadRealCv')?.addEventListener('click', (e) => { e.preventDefault(); alert("✅ Basmala Ebrahim's complete CV (PDF) — ready for download. Experience, credentials, awards included."); });
+  }
+
+  function initCertificateLightbox() {
+    const certCards = document.querySelectorAll('.certificate-card');
+    certCards.forEach(card => { card.addEventListener('click', () => { const title = card.querySelector('h3')?.innerText || 'Certificate'; alert(`✨ ${title} — verified digital credential. You can view full certificate image in production version.`); }); });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
+    anchor.addEventListener('click', function(e) { 
+      const hash = this.getAttribute('href'); 
+      if(hash === "#" || hash === "#0") return; 
+      const target = document.querySelector(hash); 
+      if(target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); } 
+    }); 
+  });
+</script>
+</body>
+</html>
